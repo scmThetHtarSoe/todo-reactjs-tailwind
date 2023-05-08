@@ -9,7 +9,7 @@ class AddForm extends Component {
     add = (e) => {
       e.preventDefault();
       let name = this.nameRef.current.value;
-      if (name !== "") {
+      if (name.trim() !== "") {
         this.props.add(name);
         this.nameRef.current.value = "";
       }
