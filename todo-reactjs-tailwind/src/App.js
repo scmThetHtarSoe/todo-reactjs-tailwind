@@ -181,6 +181,7 @@ class App extends Component {
     this.setState({ items }, () => {
       this.updateLocalStorage();
     });
+    this.setState({filteredItems:items});
   }
 
   render() {
